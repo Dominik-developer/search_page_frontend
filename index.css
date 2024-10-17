@@ -1,0 +1,91 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-y: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Rozkład głównych elementów - main na środku, footer na dole */
+    min-height: 100vh; /* Cała strona zajmuje 100% wysokości widoku */
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    width: 100%;
+    color: #666;
+}
+
+
+/* Media queries dla ekranów o szerokości mniejszej niż 360px */
+@media (max-width: 320px) {
+    form {
+        width: 220px; /* Zmniejszona szerokość formularza */
+    }
+
+    h2 {
+        font-size: 18px; /* Zmniejszona czcionka dla nagłówka h2 */
+    }
+
+    input[type="text"], button {
+        font-size: 14px; /* Zmniejszona czcionka dla formularza */
+    }
+
+    footer {
+        font-size: 12px; /* Zmniejszona czcionka w stopce */
+        padding: 15px 0; /* Zwiększona wysokość stopki */
+    }
+}
