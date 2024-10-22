@@ -8,8 +8,8 @@ html, body {
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Rozkład głównych elementów - main na środku, footer na dole */
-    min-height: 100vh; /* Cała strona zajmuje 100% wysokości widoku */
+    justify-content: space-between; 
+    min-height: 100vh; 
 }
 
 main {
@@ -70,22 +70,22 @@ footer {
 }
 
 
-/* Media queries dla ekranów o szerokości mniejszej niż 360px */
+/* Media queries */
 @media (max-width: 320px) {
     form {
-        width: 220px; /* Zmniejszona szerokość formularza */
+        width: 220px; 
     }
 
     h2 {
-        font-size: 18px; /* Zmniejszona czcionka dla nagłówka h2 */
+        font-size: 18px; 
     }
 
     input[type="text"], button {
-        font-size: 14px; /* Zmniejszona czcionka dla formularza */
+        font-size: 14px; 
     }
 
     footer {
-        font-size: 12px; /* Zmniejszona czcionka w stopce */
-        padding: 15px 0; /* Zwiększona wysokość stopki */
+        font-size: 12px; 
+        padding: 15px 0;
     }
 }
